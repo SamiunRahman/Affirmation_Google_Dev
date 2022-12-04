@@ -21,6 +21,8 @@ class ItemAdapter (
     class ItemViewHolder(view: View): RecyclerView.ViewHolder(view){
         val textView: TextView = view.findViewById(R.id.item_title)
         val imageView: ImageView = view.findViewById(R.id.item_img)
+        val textView2: TextView = view.findViewById(R.id.item_descripton)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
@@ -32,13 +34,17 @@ class ItemAdapter (
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-        Log.v(TAG, "This the value of item "+context.resources.getString(item.stringResourceId))
+        Log.v(TAG, "This the value of item "+context.resources.getText(item.stringResourceId))
+
+        Log.v(TAG, "This the Description of item "+context.resources.getText(item.stringDescription))
         holder.textView.text = context.resources.getString(item.stringResourceId)
         holder.imageView.setImageResource(item.imgResourceId)
+        holder.textView2.text = context.resources.getString(item.stringDescription)
+
 
     }
 
     override fun getItemCount(): Int {
-        return 5
+        return dataset.count()
     }
 }
