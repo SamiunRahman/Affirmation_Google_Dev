@@ -1,16 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Affirmations" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Affirmations" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">#81FAB7</item>
+        <item name="colorPrimaryVariant">#4BC766</item>
+        <item name="colorOnPrimary">@color/nightPrimaryTextColor</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">#FCB3FB</item>
+        <item name="colorSecondaryVariant">#AE82C9</item>
+        <item name="colorOnSecondary">@color/nightSecondaryTextColor</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="21">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="21">#C74BBB</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

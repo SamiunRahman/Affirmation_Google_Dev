@@ -11,6 +11,15 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/card_backgroud"
         app:layoutManager="LinearLayoutManager"
         android:scrollbars="vertical"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom|right"
+        android:text="Grid View" />
 </FrameLayout>
